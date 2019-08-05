@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto;
+  box-sizing: border-box;
+}
+
+.checker-title {
+  text-align: center;
+  margin: 50px 0;
+}
+
+/* Player style */
+
+.player-container {
+  width: 400px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.player-one,
+.player-two {
+  margin-bottom: 30px;
+}
+.checker-board {
+  display: flex;
+  flex-wrap: wrap;
+  border: 5px solid #000;
+  height: 400px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.dark {
+  background: #000;
+}
+
+.light {
+  background: #ff0100;
+}
+
+.square {
+  height: 50px;
+  width: 50px;
+}
