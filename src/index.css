@@ -45,4 +45,23 @@ body {
 .square {
   height: 50px;
   width: 50px;
+  color: #fff;
+}
+
+.chip {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: relative;
+  top: 4px;
+  left: 4px;
+  border: 1px solid #fff;
+}
+
+.red {
+  background: #ff0100;
+}
+
+.black {
+  background: #000;
 }
