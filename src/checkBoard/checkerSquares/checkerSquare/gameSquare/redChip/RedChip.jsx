@@ -5,7 +5,7 @@ const RedChip = props => {
   return (
       <div className="red chip" />
   );
-}
+};
 
 RedChip.propTypes = {
 

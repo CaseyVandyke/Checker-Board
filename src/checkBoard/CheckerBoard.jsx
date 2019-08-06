@@ -1,6 +1,6 @@
 import React, { useState, useContext, Fragment } from "react";
-import Player from "../player/Player";
-import CheckerSquares from "./checkerSquares/CheckerSquares";
+import Player from "./player";
+import CheckerSquares from "./checkerSquares";
 
 const CheckerBoard = () => {
   return (

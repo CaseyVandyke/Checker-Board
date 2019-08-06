@@ -1,8 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import GameSquare from './gameSquare/GameSquare';
-import InertSquare from './inertSquare/InertSquare';
-
+import GameSquare from './gameSquare';
+import InertSquare from './inertSquare';
 
 const hasBlackChip = row => row >= 5;
 

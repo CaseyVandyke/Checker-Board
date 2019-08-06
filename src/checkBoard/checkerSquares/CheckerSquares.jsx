@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CheckerSquare from "./checkerSquare/CheckerSquare";
+import CheckerSquare from "./checkerSquare";
 
 const boardSize = 8;
 

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import BlackChip from './blackChip/BlackChip';
+import BlackChip from './blackChip';
 import RedChip from './redChip/RedChip';
 
 const GameSquare = props => {

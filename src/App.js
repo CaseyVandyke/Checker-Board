@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css";
-import CheckerBoard from "./checkBoard/CheckerBoard";
+import CheckerBoard from "./checkBoard";
 
 function App() {
   return (
