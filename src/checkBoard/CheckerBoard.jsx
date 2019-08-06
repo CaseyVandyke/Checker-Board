@@ -1,5 +1,5 @@
 import React, { useState, useContext, Fragment } from "react";
-import Player from "../Player";
+import Player from "../player/Player";
 import CheckerSquares from "./checkerSquares/CheckerSquares";
 
 const CheckerBoard = () => {
