@@ -4,6 +4,10 @@ import GameSquare from './gameSquare/GameSquare';
 import InertSquare from './inertSquare/InertSquare';
 
 
+const hasBlackChip = row => row >= 5;
+
+const hasRedChip= row => row <= 2;
+
 const isLightSquare = ({ column, row }) => (column + row) % 2 === 0;
 
 const CheckerPiece = props => {
@@ -16,8 +20,8 @@ const CheckerPiece = props => {
       <GameSquare
         column={column}
         row={row}
-        hasBlackChip={true}
-        hasRedChip={false}
+        hasBlackChip={hasBlackChip(row)}
+        hasRedChip={hasRedChip(row)}
       />
     );
   }
