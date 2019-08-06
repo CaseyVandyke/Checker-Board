@@ -1,9 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
+import GameSquare from './gameSquare/GameSquare';
+import InertSquare from './inertSquare/InertSquare';
 
-const DarkSquare = () => <div className="dark square" />;
-
-const LightSquare = () => <div className="light square" />;
 
 const isLightSquare = ({ column, row }) => (column + row) % 2 === 0;
 
@@ -11,9 +10,14 @@ const CheckerPiece = props => {
   const { column, row } = props;
 
   if (isLightSquare(props)) {
-    return <LightSquare />;
+    return <InertSquare />;
   } else {
-    return <DarkSquare />;
+    return (
+      <GameSquare
+        column={column}
+        row={row}
+      />
+    );
   }
 };
 

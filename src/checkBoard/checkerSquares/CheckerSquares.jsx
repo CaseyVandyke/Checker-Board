@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CheckerSquare from "./CheckerSquare";
+import CheckerSquare from "./checkerSquare/CheckerSquare";
 
 const boardSize = 8;
 
@@ -9,7 +9,7 @@ const getColumns = rowCount => {
   for (
     let columnCount = 0;
     columnCount < boardSize;
-    columnCount = columnCount + 1
+    columnCount++
   ) {
     columns.push(<CheckerSquare column={columnCount} row={rowCount} />);
   }
@@ -20,20 +20,17 @@ const getColumns = rowCount => {
 const getRows = () => {
   const rows = [];
 
-  for (let rowCount = 0; rowCount < boardSize; rowCount = rowCount + 1) {
+  for (let rowCount = 0; rowCount < boardSize; rowCount++) {
     rows.push(getColumns(rowCount));
   }
 
   return rows;
 };
 
-const CheckerSquares = props => {
-  const [squares, setSquare] = useState([]);
-  const row = 8;
-  const firstPlayerPiece = 23;
-  const secondPlayerPiece = 40;
-
-  return <div className="checker-board">{getRows()}</div>;
+const CheckerSquares = () => {
+  return (
+      <div className="checker-board">{getRows()}</div>
+  );
 };
 
 export default CheckerSquares;
