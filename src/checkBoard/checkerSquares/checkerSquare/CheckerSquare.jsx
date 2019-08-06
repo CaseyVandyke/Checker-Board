@@ -16,6 +16,8 @@ const CheckerPiece = props => {
       <GameSquare
         column={column}
         row={row}
+        hasBlackChip={true}
+        hasRedChip={false}
       />
     );
   }
