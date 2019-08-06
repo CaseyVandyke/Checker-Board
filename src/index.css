@@ -10,7 +10,7 @@ body {
 
 .checker-title {
   text-align: center;
-  margin: 50px 0;
+  margin: 30px 0;
 }
 
 /* Player style */
@@ -35,11 +35,11 @@ body {
 }
 
 .dark {
-  background: #000;
+  background: #ba7a3a;
 }
 
 .light {
-  background: #ff0100;
+  background: #f0d2b4;
 }
 
 .square {
@@ -53,9 +53,9 @@ body {
   width: 40px;
   border-radius: 50%;
   position: relative;
-  top: 4px;
-  left: 4px;
-  border: 1px solid #fff;
+  top: 3px;
+  left: 3px;
+  border: 2px solid #fff;
 }
 
 .red {
